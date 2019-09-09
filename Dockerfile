@@ -1,4 +1,4 @@
-FROM php:7.3-fpm-alpine
+FROM php:7.3-alpine
 
 RUN apk add --update \
   curl \
@@ -62,9 +62,3 @@ COPY ./laravel.ini /usr/local/etc/php/conf.d
 COPY ./xlaravel.pool.conf /usr/local/etc/php-fpm.d/
 
 WORKDIR /var/www
-
-USER www-data
-
-CMD ["php-fpm"]
-
-EXPOSE 9000
