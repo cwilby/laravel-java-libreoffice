@@ -11,6 +11,7 @@ RUN apk add --update \
   jpeg-dev \
   libmcrypt-dev \
   libpng-dev \
+  mysql-client \
   postgresql-dev \
   openssl-dev \
   libzip-dev \
